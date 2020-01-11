@@ -685,7 +685,7 @@ h1, h2, h3, h4, h5,
 
 .schedule-wrap {
   padding: 40px;
-  background: #f23a2e;
+  background: #267744;
   max-width: 700px;
   position: relative;
   z-index: 9;
@@ -718,49 +718,6 @@ h1, h2, h3, h4, h5,
     color: #fff;
     padding: 10px 20px; }
     .schedule-wrap .cta a .arrow {
-      font-size: 1.2rem;
-      position: relative;
-      top: 3px; }
-
-.schedule-wrap2 {
-  padding: 40px;
-  background: #f23a2e;
-  width: 50%;
-  position: absolute;
-  z-index: 9;
-  right: 0;
-  color: white;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
-  @media (max-width: 991.98px) {
-    .schedule-wrap2 {
-      width: 90%; } }
-  .schedule-wrap2:before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    background: inherit;
-    -webkit-transform-origin: bottom right;
-    -ms-transform-origin: bottom right;
-    transform-origin: bottom right;
-    -webkit-transform: skew(12deg, 0deg);
-    -ms-transform: skew(12deg, 0deg);
-    transform: skew(12deg, 0deg); }
-  .schedule-wrap2 strong {
-    color: #fff;
-    font-weight: bold; }
-  .schedule-wrap2 .cta a {
-    text-align: center;
-    background: #f89d13;
-    color: #fff;
-    padding: 10px 20px; }
-    .schedule-wrap2 .cta a .arrow {
       font-size: 1.2rem;
       position: relative;
       top: 3px; }
