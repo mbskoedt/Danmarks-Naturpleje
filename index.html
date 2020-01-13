@@ -422,33 +422,70 @@
             </p>
           </div>
         </div>
-
+<!--
+        <div class="container form-top">
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+              <div class="panel panel-danger">
+                <div class="panel-body">
+                  <form id="reused_form">
+                    <div class="form-group">
+                      <label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+                      <input type="text" name="name" class="form-control" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                      <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+                      <input type="email" name="email" class="form-control" placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                      <label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
+                      <textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <button class="btn btn-raised btn-block btn-danger">Post &rarr;</button>
+                    </div>
+                  </form>
+                  <div id="error_message" style="width:100%; height:100%; display:none; ">
+                    <h4>
+                      Error
+                    </h4>
+                    Sorry there was an error sending your form.
+                  </div>
+                  <div id="success_message" style="width:100%; height:100%; display:none; ">
+                    <h2>Success! Your Message was Sent Successfully.</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        -->
         <div class="row justify-content-center">
           <div class="col-md-7">
-            <form method="post" data-aos="fade">
+            <form action="handler.php" method="post" enctype="text/plain" data-aos="fade">
               <div class="form-group row">
                 <div class="col-md-6 mb-3 mb-lg-0">
-                  <input type="text" class="form-control" placeholder="Navn">
+                  <input type="text" class="form-control" placeholder="Navn" name="navn">
                 </div>
                 <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Firma">
+                  <input type="text" class="form-control" placeholder="Firma" name="firma">
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Emne">
+                  <input type="text" class="form-control" placeholder="Emne" name="emne">
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-12">
-                  <input type="email" class="form-control" placeholder="Email">
+                  <input type="email" class="form-control" placeholder="Email" name="email">
                 </div>
               </div>
               <div class="form-group row">
                 <div class="col-md-12">
-                  <textarea class="form-control" id="" cols="30" rows="10" placeholder="Skriv din besked her."></textarea>
+                  <textarea class="form-control" id="" cols="30" rows="10" placeholder="Skriv din besked her." name="tekst"></textarea>
                 </div>
               </div>
 
@@ -465,85 +502,85 @@
       </div>
     </div>
 
-    <footer class="footer-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h3 class="text-dark">Kontakt</h3>
-            <address>
-              Danmarks Naturpleje, DNP <br>
-              <a href="https://goo.gl/maps/tsF5W5hJQDiyxKYv7">
-                Vestre Ringgade 220 <br>
-                8000 Aarhus C
-              </a>
-              <br>
-              Tlf.: <a href="tel:+4528564660">+45 28 56 46 60</a> <br>
-              Mail: <a href="mailto:mj-have@live.dk">mj-have@live.dk</a>
-            </address>
-          </div>
+        <footer class="footer-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h3 class="text-dark">Kontakt</h3>
+                <address>
+                  Danmarks Naturpleje, DNP <br>
+                  <a href="https://goo.gl/maps/tsF5W5hJQDiyxKYv7">
+                    Vestre Ringgade 220 <br>
+                    8000 Aarhus C
+                  </a>
+                  <br>
+                  Tlf.: <a href="tel:+4528564660">+45 28 56 46 60</a> <br>
+                  Mail: <a href="mailto:mj-have@live.dk">mj-have@live.dk</a>
+                </address>
+              </div>
 
-          <div class="col-md-3 ml-auto">
-            <h3 class="text-dark">Links</h3>
-            <ul class="list-unstyled footer-links">
-              <li><a href="#opgaver-section">Opgaver</a></li>
-              <li><a href="#kunder-section">Kunder</a></li>
-              <li><a href="#om-os-section">Om os</a></li>
-              <li><a href="#kontakt-section">Kontakt</a></li>
-            </ul>
-          </div>
+              <div class="col-md-3 ml-auto">
+                <h3 class="text-dark">Links</h3>
+                <ul class="list-unstyled footer-links">
+                  <li><a href="#opgaver-section">Opgaver</a></li>
+                  <li><a href="#kunder-section">Kunder</a></li>
+                  <li><a href="#om-os-section">Om os</a></li>
+                  <li><a href="#kontakt-section">Kontakt</a></li>
+                </ul>
+              </div>
 
-          <div class="col-md-4">
-            <h3 class="text-dark">Fang os også på</h3>
-            <a href="https://www.facebook.com/Danmarks-Natur-Pleje-1627844944142922/"><img src="images/facebook.png" width="30px;" alt="LinkedIn Icon"></img> Danmarks Naturpleje facebook</a>
-            <br>
-            <br>
-            <a href="https://www.linkedin.com/in/marc-jensen-1b4a40113"><img src="images/linkedin.png" width="30px;" alt="LinkedIn Icon"></img> Marc M. Jensens LinkedIn</a>
+              <div class="col-md-4">
+                <h3 class="text-dark">Fang os også på</h3>
+                <a href="https://www.facebook.com/Danmarks-Natur-Pleje-1627844944142922/"><img src="images/facebook.png" width="30px;" alt="LinkedIn Icon"></img> Danmarks Naturpleje facebook</a>
+                <br>
+                <br>
+                <a href="https://www.linkedin.com/in/marc-jensen-1b4a40113"><img src="images/linkedin.png" width="30px;" alt="LinkedIn Icon"></img> Marc M. Jensens LinkedIn</a>
 
-          </div>
+              </div>
 
-        </div>
+            </div>
 
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class=" pt-5">
-              <p class="copyright">
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>
-                  document.write(new Date().getFullYear());
-                </script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              </p>
+            <div class="row pt-5 mt-5 text-center">
+              <div class="col-md-12">
+                <div class=" pt-5">
+                  <p class="copyright">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>
+                      document.write(new Date().getFullYear());
+                    </script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  </p>
+                </div>
+              </div>
+
             </div>
           </div>
+        </footer>
 
-        </div>
+
+
       </div>
-    </footer>
+      <!-- .site-wrap -->
+
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/jquery-migrate-3.0.1.min.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.stellar.min.js"></script>
+      <script src="js/jquery.countdown.min.js"></script>
+      <script src="js/bootstrap-datepicker.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.fancybox.min.js"></script>
+      <script src="js/jquery.sticky.js"></script>
+      <script src="js/jquery.mb.YTPlayer.min.js"></script>
+      <script src="form.js"></script>
 
 
 
-  </div>
-  <!-- .site-wrap -->
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/jquery.mb.YTPlayer.min.js"></script>
-
-
-
-
-  <script src="js/main.js"></script>
+      <script src="js/main.js"></script>
 
 </body>
 
