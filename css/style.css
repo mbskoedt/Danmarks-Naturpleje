@@ -1022,6 +1022,14 @@ h1, h2, h3, h4, h5,
   transform: skew(-12deg, 0deg);
 }
 
+@media (max-width: 991.98px) {
+  .schedule-wrap:before {
+    -webkit-transform: skew(0deg, 0deg);
+    -ms-transform: skew(0deg, 0deg);
+    transform: skew(0deg, 0deg);
+  }
+}
+
 .schedule-wrap strong {
   color: #fff;
   font-weight: bold;
